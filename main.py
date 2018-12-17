@@ -6,7 +6,7 @@ from blackjack import Blackjack
 
 def clear():
     if os_name == 'nt':
-        os_name('cls')
+        os_system('cls')
     else:
         os_system('clear')
 
@@ -24,6 +24,7 @@ def ask_to_start():
 
 
 def start_new_game():
+
     clear()
     player = create_new_player()
     clear()
